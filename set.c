@@ -37,6 +37,7 @@ void set_free(set_t *set)
     }
 
     set->size = 0;
+    set->elements = 0;
     free(set->buckets);
 }
 
